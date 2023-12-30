@@ -3,7 +3,7 @@ import '../css/LinksPage.css';
 export function LinksPage() {
     return (
         <div className='LinksPage'>
-            <a href='http://barilur.org/bible/'> Հայերեն Աստվածաշունչ</a>
+            <a href='http://barilur.org/bible/' target='_blank'> Հայերեն Աստվածաշունչ</a>
             
             <p> 
                 Ամսաթերթի անգլերեն տարբերակը 
