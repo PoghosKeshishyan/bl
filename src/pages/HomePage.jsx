@@ -11,9 +11,12 @@ export function HomePage() {
   }, [])
 
   async function loadingData() {
-    // monthly for the last three months
-    const response = await axios.get('journals');
-    setCurrentJournals(response.data.slice(-3));
+    let currentYear = await axios.get('years');
+    currentYear = currentYear.data[0].years.reverse()[0];
+
+    let journalsResp = await axios.get(`journals/${currentYear}`);
+    journalsResp = journalsResp.data.slice(-3);
+    setCurrentJournals(journalsResp);
   }
 
   return (
