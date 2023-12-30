@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArchiveNewspapers } from '../components/ArchiveNewspapers';
+import { ArchiveJournals } from '../components/ArchiveJournals';
 import { ArchiveSearchBar } from '../components/ArchiveSearchBar';
 import { ModalPage } from './ModalPage';
 import '../css/ArchivePage.css';
@@ -7,8 +7,8 @@ import axios from '../axios';
 
 export function ArchivePage() {
     const [years, setYears] = useState([]);
-    const [newspapers, setNewspapers] = useState([]);
-    const [currentNewspaper, setCurrentNewspaper] = useState([]);
+    const [journals, setJournals] = useState([]);
+    const [currentJournal, setCurrentJournal] = useState([]);
     const [searchInput, setSearchInput] = useState('');
     const [searchedResults, setSearchedResults] = useState([]);
     const [modalOpened, setModalOpened] = useState(false);
@@ -20,20 +20,20 @@ export function ArchivePage() {
     async function loadingData() {
         // years
         const yearsResp = await axios.get('years');
-        setYears(yearsResp.data.reverse());
+        setYears(yearsResp.data[0].years.reverse());
 
         // all newspapers
-        const newspapersResp = await axios.get(`newspapers?year=${yearsResp.data[0]}`);
-        setNewspapers(newspapersResp.data);
+        const journalsResp = await axios.get(`journals/${yearsResp.data[0].years[0]}`);
+        setJournals(journalsResp.data);
 
         // first newspapers
-        setCurrentNewspaper(newspapersResp.data[0]);
+        setCurrentJournal(journalsResp.data[0]);
     }
 
     async function onChangeSelect(event) {
-        const newspapersResp = await axios.get(`newspapers?year=${event.target.value}`);
-        setNewspapers(newspapersResp.data);
-        setCurrentNewspaper(newspapersResp.data[0]);
+        const response = await axios.get(`journals/${event.target.value}`);
+        setJournals(response.data);
+        setCurrentJournal(response.data[0]);
     }
 
     async function submitHandler(event) {
@@ -41,11 +41,11 @@ export function ArchivePage() {
 
         if (searchInput) {
             const searchedText = searchInput.toLowerCase();
-            const allNewspapersResp = await axios.get('newspapers');
-            const allNewspapersData = allNewspapersResp.data;
+            const allJournalsResponse = await axios.get('journals');
+            const allJournals = allJournalsResponse.data;  
             let filteredResults = [];
         
-            allNewspapersData.forEach(newspaper => {
+            allJournals.forEach(newspaper => {
                 const newspaperResults = newspaper.content
                     .map(el => ({
                         url: newspaper.url,
@@ -97,10 +97,10 @@ export function ArchivePage() {
                 setSearchInput={setSearchInput}
             />
 
-            <ArchiveNewspapers
-                newspapers={newspapers}
-                currentNewspaper={currentNewspaper}
-                setCurrentNewspaper={setCurrentNewspaper}
+            <ArchiveJournals
+                journals={journals}
+                currentJournal={currentJournal}
+                setCurrentJournal={setCurrentJournal}
             />
         </div>
     )

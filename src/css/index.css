@@ -12,15 +12,16 @@
   --blue: #134c92;
   --white: #ffffff;
   --slate: #91a0ae;
+  --dark-slate: #708090;
   --yellow: #fdfd34;
   --dark-red: #660000;
   --light-yellow: #ffffcc;
-  --black-alpha: #000000e5;
+  --black-alpha: #000000f0;
 }
 
 body {
   width: 100%;
-  background: slategrey;
+  background: var(--dark-slate);
 }
 
 .App {

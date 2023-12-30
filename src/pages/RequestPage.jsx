@@ -3,7 +3,7 @@ import '../css/RequestPage.css';
 export function RequestPage() {
   return (
     <div className='RequestPage'>
-      <form action='feedback.php' method='post' accept-charset='utf-8'>
+      <form action='feedback.php' method='post' acceptCharset='utf-8'>
         <div>
           <input name='subject' value='Submission' type='hidden' />
           <input name='redirect' value='thankyou.html' type='hidden' />

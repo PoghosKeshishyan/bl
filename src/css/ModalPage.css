@@ -44,7 +44,7 @@
 }
 
 .ModalPage .box-container::-webkit-scrollbar-track {
-    background: var(--slate);
+    background: var(--dark-slate);
     border-radius: 5px;
 }
 

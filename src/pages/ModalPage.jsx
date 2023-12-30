@@ -12,7 +12,7 @@ export function ModalPage({ searchedResults, setModalOpened }) {
             <div className="box-container">
                 {
                     searchedResults.map((elem, index) => (
-                        <Link className='box' to={`/terter/${elem.url}`} target='_blank' key={index}>
+                        <Link className='box' to={`/journals/${elem.url}`} target='_blank' key={index}>
                             <p>{index + 1}. {elem.text}</p>
                             <span>էջ {elem.page} - {elem.title} {elem.year}</span>
                         </Link>)
