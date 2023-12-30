@@ -7,7 +7,7 @@ export function LinksPage() {
             
             <p> 
                 Ամսաթերթի անգլերեն տարբերակը 
-                <a href='./journals/tert (english 12-2022).pdf' target='_blank'>Համար 1</a>
+                <a href='./journals/tert-english-12-2022.pdf' target='_blank'>Համար 1</a>
             </p>
         </div>
     )
