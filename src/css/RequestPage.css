@@ -1,0 +1,57 @@
+.RequestPage form {
+    width: 70%;
+    margin: 3rem auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.RequestPage form div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.RequestPage form div input {
+    width: 49%;
+    padding: 12px 15px;
+    font-size: 1.3rem;
+    color: var(--red);
+    font-family: 'Arial';
+    border: 2px solid var(--red);
+    box-shadow: .1rem .1rem .2rem var(--dark-red);
+}
+
+.RequestPage form textarea {
+    width: 96%;
+    height: 150px;
+    padding: 12px 15px;
+    padding: 15px;
+    font-size: 1.3rem;
+    color: var(--red);
+    resize: none;
+    font-family: 'Arial';
+    border: 2px solid var(--red);
+    box-shadow: .1rem .1rem .2rem var(--dark-red);
+}
+
+.RequestPage form input::placeholder,
+.RequestPage form textarea::placeholder {
+    font-size: 1rem;
+}
+
+.RequestPage form input[type=submit] {
+    margin-top: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: var(--white);
+    font-size: 1.2rem;
+    font-family: 'Arial';
+    border: 2px solid var(--red);
+    box-shadow: .1rem .1rem .2rem var(--dark-red);
+}
+
+.RequestPage form input[type=submit]:hover {
+    background: var(--red);
+    color: var(--white);
+}

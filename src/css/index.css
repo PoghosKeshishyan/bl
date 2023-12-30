@@ -1,0 +1,33 @@
+* {
+  padding: 0; margin: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  font-family: 'Calibri';
+}
+
+:root {
+  --red: #B11718;
+  --blue: #134c92;
+  --white: #ffffff;
+  --slate: #91a0ae;
+  --yellow: #fdfd34;
+  --dark-red: #660000;
+  --light-yellow: #ffffcc;
+  --black-alpha: #000000e5;
+}
+
+body {
+  width: 100%;
+  background: slategrey;
+}
+
+.App {
+  width: 1000px;
+  margin: 15px auto;
+  border-radius: 10px;
+  border: 2px solid var(--dark-red);
+  background: var(--light-yellow);
+  box-shadow: .2rem .2rem .4rem var(--dark-red);
+}

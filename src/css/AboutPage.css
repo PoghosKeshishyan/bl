@@ -1,0 +1,25 @@
+.AboutPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.AboutPage .text-container h1{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+    color: var(--dark-red);
+    -webkit-text-stroke: 1px;
+    font-family: 'Times New Roman';
+}
+
+.AboutPage .text-container p {
+    margin: 10px 0;
+    text-align: justify;
+    font-family: 'Tahoma';
+    line-height: 25px;
+    text-indent: 25px;
+    font-size: 1.1rem;
+}

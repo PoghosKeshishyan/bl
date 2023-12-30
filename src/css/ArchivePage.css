@@ -1,0 +1,56 @@
+.ArchivePage {
+    padding: 10px 3%;
+}
+
+.ArchivePage .ArchiveSearchBar {
+    padding: 10px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ArchivePage .ArchiveSearchBar .selectYear span,
+.ArchivePage .ArchiveSearchBar .selectMonth span {
+    margin-right: 10px;
+    color: var(--red);
+    font-size: 1.1rem;
+    letter-spacing: .5px;
+    -webkit-text-stroke: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ArchivePage .ArchiveSearchBar .selectYear select,
+.ArchivePage .ArchiveSearchBar .selectMonth select {
+    padding: 5px 8px;
+    cursor: pointer;
+    color: var(--red);
+    font-size: 1.1rem;
+    border-radius: 6px;
+    -webkit-text-stroke: 1px;
+    border: 2px solid var(--red);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ArchivePage .ArchiveSearchBar .search-container input {
+    margin: 0 3px 0 8px;
+    padding: 5px 8px;
+    color: var(--red);
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid var(--red);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ArchivePage .ArchiveSearchBar .search-container input[type=submit] {
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: white;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px;
+}
+
+.ArchivePage .ArchiveSearchBar .search-container input[type=submit]:hover {
+    color: var(--light-yellow);
+    background: var(--red);
+}

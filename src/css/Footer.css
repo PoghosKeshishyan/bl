@@ -1,0 +1,40 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 10px 30px;
+    padding: 10px;
+    border-top: 1px solid var(--slate);
+}
+
+.Footer .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.Footer .box p, .Footer .box i, .Footer .box a {
+    font-size: 1.1rem;
+    color: var(--dark-red);
+    letter-spacing: .4px;
+}
+
+.Footer .box p, .Footer .box a {
+    font-family: 'Times New Roman';
+    -webkit-text-stroke: 1px;
+}
+
+.Footer .box .image {
+    width: 130px;
+}
+
+.Footer .box img {
+    width: 100%;
+}
+
+.Footer .box .image a {
+    display: flex;
+    align-items: center;
+}

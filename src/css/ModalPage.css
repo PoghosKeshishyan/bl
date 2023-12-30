@@ -1,0 +1,80 @@
+.ModalPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 1000px;
+    padding: 20px 30px;
+    max-height: 95vh;
+    border-radius: 20px;
+    background: var(--black-alpha);
+}
+
+.ModalPage i {
+    display: block;
+    font-size: 2rem;
+    color: var(--white);
+    text-align: end;
+    cursor: pointer;
+}
+
+.ModalPage i:hover {
+    color: var(--red);
+}
+
+.ModalPage h2 {
+    font-size: 2.3rem;
+    color: var(--white);
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px;
+    font-family: 'Times New Roman';
+}
+
+.ModalPage .box-container {
+    margin-top: 40px;
+    padding-right: 10px;
+    max-height: 72vh;
+    overflow-y: auto;
+}
+
+.ModalPage .box-container::-webkit-scrollbar {
+    width: .8rem;
+}
+
+.ModalPage .box-container::-webkit-scrollbar-track {
+    background: var(--slate);
+    border-radius: 5px;
+}
+
+.ModalPage .box-container::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.ModalPage .box-container .box {
+    display: block;
+    gap: 8px;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.ModalPage .box-container .box:hover {
+    background: var(--slate);
+}
+
+.ModalPage .box-container .box span,
+.ModalPage .box-container .box p {
+    font-family: 'Arial';
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.ModalPage .box-container .box span {
+    display: inline-block;
+    padding: 4px 0;
+    font-weight: bold;
+    font-style: italic;
+}

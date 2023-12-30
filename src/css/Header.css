@@ -1,0 +1,31 @@
+.Header .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header .image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.Header nav {
+    background: var(--red);
+}
+
+.Header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--light-yellow);
+}
+
+.Header nav a.active {
+    color: var(--yellow);
+    background: var(--blue);
+    font-weight: bolder;
+}
+
+.Header nav a:hover {
+    color: var(--yellow);
+    background: var(--blue);
+}

@@ -1,0 +1,15 @@
+.LinksPage {
+    margin: 20px 30px;
+}
+
+.LinksPage a {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.LinksPage p {
+    padding: 10px 0;
+    font-size: 1.3rem;
+}

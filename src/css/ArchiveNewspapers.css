@@ -1,0 +1,64 @@
+.ArchiveNewspapers {
+    display: flex;
+    min-height: 500px;
+    border-top: 2px solid var(--red);
+}
+
+.ArchiveNewspapers .months {
+    width: 20%;
+    border-right: 2px solid var(--red);
+
+}
+
+.ArchiveNewspapers .months a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: var(--red);
+    cursor: context-menu;
+    border-radius: 8px 100px 100px 5px;
+}
+
+.ArchiveNewspapers .months a.active {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.ArchiveNewspapers .months a.active:hover {
+    color: var(--white);
+    background: var(--red);
+}
+
+.ArchiveNewspapers .content {
+    width: 80%;
+    padding: 20px;
+}
+
+.ArchiveNewspapers .content .heading {
+    font-size: 1.9rem;
+    color: var(--blue);
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 20px;
+    -webkit-text-stroke: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ArchiveNewspapers .content .row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 5px 0;
+    color: var(--red);
+    border-bottom: 2px solid;
+}
+
+.ArchiveNewspapers .content .row .sub_content{
+    width: 95%;
+}
+
+.ArchiveNewspapers .content .row .page {
+    width: 5%;
+    text-align: end;
+}
