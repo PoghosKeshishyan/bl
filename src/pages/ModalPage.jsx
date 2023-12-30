@@ -6,7 +6,7 @@ export function ModalPage({ searchedResults, setModalOpened }) {
         <div className="ModalPage">
             <i className="fa-solid fa-xmark" onClick={() => setModalOpened(false)} />
 
-            <h2>Որոնման արդյնունքը</h2>
+            <h2>Որոնման արդյունքը</h2>
             {!searchedResults.length && <h2 style={{marginTop: '20px'}}>դատարկ է</h2>}
 
             <div className="box-container">
