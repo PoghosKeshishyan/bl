@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../css/ArchiveNewspapers.css';
+import '../css/ArchiveJournals.css';
 
 export function ArchiveJournals({ journals, currentJournal, setCurrentJournal }) {
     function onMouseEnterJournal(event, disabled) {
@@ -10,7 +10,7 @@ export function ArchiveJournals({ journals, currentJournal, setCurrentJournal })
     }
 
     return (
-        <div className='ArchiveNewspapers'>
+        <div className='ArchiveJournals'>
             <div className='months'>
                 {
                     journals.map(elem => <div key={elem._id}>

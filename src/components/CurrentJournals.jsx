@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export function CurrentJournals({ currentJournals }) {
   return (
-    <div className='CurrentNewsPapers'>
+    <div className='CurrentJournals'>
       {
         currentJournals.map(elem => <div key={elem._id} className="box">
           <p className="title">{elem.title} {elem.year}</p>
